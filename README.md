@@ -71,7 +71,7 @@ This repository contains 2 files.
     - 3. transcript.json
 
 ## Answer to Questions Above
-#### Question 1
+### Question 1
 How much a customer spends is the biggest influencer on whether or not they respond to an offer. By predicting and understanding how much a customer spends will boost offer response rate.
 
 Membership duration (how long a customer has been a Starbucks Member) can also influence offer response. Long term members have experienced these types of offers in the past. Thus, they understand how they work and which ones are worth it. For a BOGO offer, the customer may save it for when they need to purchase more than one cup (with a companion) or if there was a popular promotional drink.
@@ -82,7 +82,7 @@ Difficulty corresponds to how much a customer needs to spend in order to be able
 
 Duration is how long an offer lasts, given more leeway in when they need to use an offer by can boost response rates. When an offer lasts longer there are more chances for a customer to have some occasion where they will go to Starbucks to make a purchase.
 
-#### Question 2
+### Question 2
 Using at least the 5 features discussed in question 1, it is feasible to use the data to predict if a customer will respond. It can also help improve the overall response rate.  I have achieved an 89% accuracy with a tuned RandomForestClassifier.
 
 long with predicting if a customer responds to an offer, we can predict how much a customer will spend based on each offer. This coincides with how the feature "spending" influences the model.
