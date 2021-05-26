@@ -16,6 +16,22 @@ Starbucks has about 32,660 stores across the globe. Within a month, 37.8 million
 
 The objective is to build a machine learning model that predicts whether or not a customer will respond to an offer.
 
+## Motivation
+Looking at the brief, I set a goal of answering two questions:
+1. What features influence customers the most in responding to an offer?
+2. Can these features predict whether or not a customer will respond to an offer?
+
+## Libraries
+- `pandas`
+- `numpy`
+- `json`
+- `sci-kit learn`
+- `math`
+- `matplotlib`
+- `seaborn`
+- `time`
+- `datetime`
+
 ## Datasets
 Three datasets were provided in the form of JSON files.
 
@@ -48,8 +64,30 @@ Contains transactional events.
   
 ## Files
 This repository contains 2 files. 
-- `Starbucks_Capstone_notebook.ipynb` : Jupyter Notebook with code .
+- `Starbucks_Capstone_notebook.ipynb` : Jupyter Notebook with analysis and machine learning model.
 - `Data`:
     - 1. profile.json
     - 2. portfolio.json
     - 3. transcript.json
+
+## Answer to Questions Above
+#### Question 1
+How much a customer spends is the biggest influencer on whether or not they respond to an offer. By predicting and understanding how much a customer spends will boost offer response rate.
+
+Membership duration (how long a customer has been a Starbucks Member) can also influence offer response. Long term members have experienced these types of offers in the past. Thus, they understand how they work and which ones are worth it. For a BOGO offer, the customer may save it for when they need to purchase more than one cup (with a companion) or if there was a popular promotional drink.
+
+How offers are delivered to customers can also influence a customer's response. So assigning more quota to one medium may boost response rates.
+
+Difficulty corresponds to how much a customer needs to spend in order to be able to use an offer. This can correlate to how much a customer spends. If difficulty is high and the offer is given to someone who does not spend a lot then they are less likely to respond.
+
+Duration is how long an offer lasts, given more leeway in when they need to use an offer by can boost response rates. When an offer lasts longer there are more chances for a customer to have some occasion where they will go to Starbucks to make a purchase.
+
+#### Question 2
+Using at least the 5 features discussed in question 1, it is feasible to use the data to predict if a customer will respond. It can also help improve the overall response rate.  I have achieved an 89% accuracy with a tuned RandomForestClassifier.
+
+long with predicting if a customer responds to an offer, we can predict how much a customer will spend based on each offer. This coincides with how the feature "spending" influences the model.
+
+Working in the advertising industry, there are many instances where I have to perform customer segmentation. Based on the data we have, if other than the 3 datasets given in this project. If we had access to other apps or content, then we can perform segmentation and create different persona groups. These groups would be based around demographics and/or content each customer is interested in. Simply, segementation based on products and behavior. This will allow Starbucks to target specific audiences to achieve a higher response rate.
+
+## Acknowledgements
+Thanks to Udacity for providing the necessary data.
