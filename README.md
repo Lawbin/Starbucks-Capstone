@@ -21,6 +21,8 @@ Looking at the brief, I set a goal of answering two questions:
 1. What features influence customers the most in responding to an offer?
 2. Can these features predict whether or not a customer will respond to an offer?
 
+You can find my blog post related to this project [here](https://lawbin.medium.com/understanding-starbucks-customers-response-to-offers-c09637c5d01a)
+
 ## Libraries
 - `pandas`
 - `numpy`
